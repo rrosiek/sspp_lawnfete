@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  command = "npm run build"
+
+[context.production.environments]
+  HUGO_VERSION = "0.141.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
