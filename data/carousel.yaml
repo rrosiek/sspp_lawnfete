@@ -1,0 +1,7 @@
+images: 
+  - image: /carousel/carousel_1.png
+    content_html: "1"
+  - image: /carousel/carousel_2.png
+    content_html: "2"
+  - image: /carousel/carousel_3.png
+    content_html: "3"

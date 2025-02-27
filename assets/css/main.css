@@ -1,3 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "./carousel.css";
+@source "hugo_stats.json";
+
+@theme {
+  --font-sans: "Montserrat";
+  --font-display: "Sancreek";
+  --color-gunmetal: oklch(15.70% 0.024 230.38);
+  --color-brick-red: oklch(55.35% 0.173 27.54);
+  --color-mint: oklch(76.69% 0.107 155.33);
+  --color-myrtle-green: oklch(53.13% 0.056 194.75);
+}

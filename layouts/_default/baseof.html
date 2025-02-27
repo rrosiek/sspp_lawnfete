@@ -1,10 +1,14 @@
-<!doctype html>
-<html lang="{{ .Language.Lang }}">
-  <head>
-    {{ partial "head.html" . }}
-  </head>
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}" class="antialiased bg-white font-sans">
 
-  <body class="antialiased bg-white font-sans text-gray-900">
-    {{ block "main" . }}{{ end }}
-  </body>
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  {{ block "main" . }}
+  {{ end }}
+  {{ partial "footer.html" }}
+</body>
+
 </html>

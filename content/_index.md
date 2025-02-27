@@ -1,3 +1,3 @@
 ---
-title: "SS. Peter & Paull Lawn Fete"
+title: Welcome
 ---
