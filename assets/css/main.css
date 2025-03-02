@@ -7,6 +7,8 @@
   --font-display: "Sancreek";
   --color-gunmetal: oklch(15.70% 0.024 230.38);
   --color-brick-red: oklch(55.35% 0.173 27.54);
-  --color-mint: oklch(76.69% 0.107 155.33);
-  --color-myrtle-green: oklch(53.13% 0.056 194.75);
+  --color-coral: oklch(72.25% 0.159 32.12);
+  --color-pale-yellow: oklch(90.65% 0.105 102.32);
+  --color-light-teal: oklch(88.66% 0.098 190.67);
+  --color-teal: oklch(79.63% 0.143 194.56);
 }

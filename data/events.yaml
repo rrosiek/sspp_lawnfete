@@ -1,0 +1,24 @@
+- title: Kid Zone
+  icon: 🎪
+  bg: bg-coral/90
+  description: Rides and bounce houses for all ages
+- title: Food & Snacks
+  icon: 🍕
+  bg: bg-light-teal/90
+  description: Enjoy classics and original food from local vendors
+- title: Fun Games
+  icon: 🎯
+  bg: bg-coral/90
+  description: Test your skills and luck with games of chance
+- title: Beer Tent
+  icon: 🍻
+  bg: bg-light-teal/90
+  description: Ice cold beer, seltzers and other non-alcoholic drinks
+- title: Live Music
+  icon: 🎸
+  bg: bg-coral/90
+  description: Live music on Friday and Saturday night from Hit N Run
+- title: Car Show
+  icon: 🚗
+  bg: bg-light-teal/90
+  description: Cruise night and car show on Thursday

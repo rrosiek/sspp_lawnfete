@@ -1,0 +1,15 @@
+{{ $hillsBg := resources.Get "hills_bg.svg" }}
+
+<div class="py-12 w-full bg-[url({{ $hillsBg.RelPermalink }})] bg-top bg-no-repeat">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {{ range .Site.Data.events }}
+      <div class="text-center p-6 {{ .bg }} rounded-lg">
+        <div class="text-4xl mb-4">{{ .icon }}</div>
+        <h3 class="text-xl font-semibold mb-2">{{ .title }}</h3>
+        <p class="text-lg">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,24 +1,8 @@
 {{ define "main" }}
 
-{{ $tentFlags := resources.Get "tent_flags.svg" }}
-
-<div class="w-full bg-radial-[at_20%_40%] from-sky-50 via-blue-100 to-zinc-200 to-90%">
-  <div class="mx-auto lg:w-2/3 p-4">
-    <img src="{{ $tentFlags.RelPermalink }}">
-  </div>
-  <div class="container mx-auto text-center space-y-6 lg:space-y-10">
-    <div class="font-display text-6xl text-brick-red">
-      Sts. Peter & Paul Hamburg<br />Annual Lawn Fete
-    </div>
-    <div class="font-semibold text-myrtle-green text-base/8">
-      <span class="text-5xl">July 24th - 26th 2025</span><br />
-      <span class="text-4xl">68 East Main St., Hamburg, NY</span>
-    </div>
-    <div class="mx-auto max-w-5xl p-6">
-      {{ partial "carousel.html" (dict "context" . "items" "1" "height" "60" "unit" "%" "duration" "3000") }}
-    </div>
-  </div>
-</div>
+{{ partial "title_hero.html" . }}
+{{ partial "event_summary.html" . }}
+{{ partial "sponsors.html" . }}
 <div class="bg-mint hidden">
   Friday Beer Tent Headliner Spotlight: 7/26/25 7-10pm, Hit N Run, Buffalo's Premier Party Band.<br />
   Buffalo Music Hall of Fame<br />
