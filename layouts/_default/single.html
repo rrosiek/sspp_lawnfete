@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $tentFlags := resources.Get "tent_flags.svg" }}
+
+<div class="max-w-6xl mx-auto px-4">
+  <div class="mx-auto lg:w-2/3 p-4">
+    <img src="{{ $tentFlags.RelPermalink }}">
+    <div class="text-2xl text-center text-brick-red font-display">
+      Sts. Peter & Paul Hamburg Lawn Fete
+    </div>
+  </div>
+  <div class="container mx-auto space-y-6 lg:space-y-10">
+    <div class="py-6 font-display text-center text-6xl text-brick-red border-brick-red border-b-4 border-double">
+      {{ .Page.Title }}
+    </div>
+    <div class="p-6">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+{{ end }}

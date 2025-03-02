@@ -1,7 +1,60 @@
 <div class="py-12 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="font-display text-4xl text-center text-brick-red py-6 border-y-3 border-double">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+    <div class="w-full font-display text-4xl text-center text-brick-red py-6 border-y-3 border-double">
       Sponsors
     </div>
+
+    <div class="my-4 text-xl">
+      Interested in sponsoring? Checkout the different levels and information <span class="font-semibold underline"><a
+          href="/sponsorships">here</a></span>.
+    </div>
+
+    <!-- Car Show -->
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Car Show
+    </div>
+    {{ range .Site.Data.sponsors.car_show }}
+    {{ $logo := resources.Get .image }}
+    {{ $logo := $logo.Process "resize 300x webp" }}
+    <a href="{{ .link }}">
+      <img src="{{ $logo.RelPermalink }}" />
+    </a>
+    {{ end }}
+
+    <!-- Silver -->
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Silver
+    </div>
+    {{ range .Site.Data.sponsors.silver }}
+    {{ $logo := resources.Get .image }}
+    {{ $logo := $logo.Process "resize 300x webp" }}
+    <a class="my-4" href="{{ .link }}">
+      <img src="{{ $logo.RelPermalink }}" />
+    </a>
+    {{ end }}
+
+    <!-- Bronze -->
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Bronze
+    </div>
+    {{ range .Site.Data.sponsors.bronze }}
+    {{ $logo := resources.Get .image }}
+    {{ $logo := $logo.Process "resize 300x webp" }}
+    <a class="my-4" href="{{ .link }}">
+      <img src="{{ $logo.RelPermalink }}" />
+    </a>
+    {{ end }}
+
+    <!-- Opening Act -->
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Opening Act Sponsor
+    </div>
+    {{ range .Site.Data.sponsors.open_act }}
+    {{ $logo := resources.Get .image }}
+    {{ $logo := $logo.Process "resize 300x webp" }}
+    <a class="my-4" href="{{ .link }}">
+      <img src="{{ $logo.RelPermalink }}" />
+    </a>
+    {{ end }}
   </div>
 </div>

@@ -1,1 +1,12 @@
-<div></div>
+{{ $logo := resources.Get "images/sspp_logo.png" }}
+{{ $logo := $logo.Process "resize 300x webp" }}
+
+<div class="mt-6 lg:mt-10 p-8 bg-pale-yellow/75 border-t-8 border-pale-yellow">
+  <div class="mx-auto max-w-5xl flex flex-col items-center">
+    <img src="{{ $logo.RelPermalink }}" />
+    <div class="my-6 font-semibold text-center">
+      68 East Main St.,<br />
+      Hamburg, NY, 14057
+    </div>
+  </div>
+</div>

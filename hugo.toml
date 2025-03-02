@@ -1,7 +1,10 @@
 baseURL = 'https://sspphamburglawnfete.org/'
 languageCode = 'en-us'
 title = 'SS. Peter & Paul Lawn Fete'
-disableKinds = ["taxonomy", "term"]
+disableKinds = ["section", "taxonomy", "term"]
+
+[params]
+  description = "Join us for St. Peter & Paul's Annual Lawn Fete"
 
 [build]
   [build.buildStats]

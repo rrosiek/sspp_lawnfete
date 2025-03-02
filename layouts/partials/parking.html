@@ -1,0 +1,11 @@
+{{ $parking_map := resources.Get "images/parking_map.png" }}
+{{ $parking_map := $parking_map.Process "resize 1000x webp" }}
+
+<div class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+    <div class="w-full font-display text-4xl text-center text-brick-red py-6 border-y-3 border-double">
+      Parking
+    </div>
+    <img class="my-6" src="{{ $parking_map.RelPermalink }}" />
+  </div>
+</div>

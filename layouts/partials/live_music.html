@@ -1,0 +1,25 @@
+{{ $logo := resources.Get "images/hit-n-run_logo.jpg" }}
+{{ $logo := $logo.Process "resize 450x webp" }}
+
+<div class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+    <div class="w-full font-display text-4xl text-center text-brick-red py-6 border-y-3 border-double">
+      Live Music
+    </div>
+
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Friday Night, 7-10pm
+    </div>
+    <div>
+      <a href="https://www.hitnrun.net/">
+        <img src="{{ $logo.RelPermalink }}" />
+      </a>
+    </div>
+    <div class="my-4 text-center">
+      <div>Buffalo Music Hall of Fame</div>
+      <div>Buffalo Music Award Winner 9 Years running</div>
+      <div>"Top Rock Pop Band"</div>
+      <div>Channel 4's "Best Of" Cover Rock Band</div>
+    </div>
+  </div>
+</div>

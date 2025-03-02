@@ -2,7 +2,7 @@
 
 {{ $tentFlags := resources.Get "tent_flags.svg" }}
 
-<div class="w-full bg-[url({{ $tentFlags.RelPermalink }})]">
+<div class="max-w-6xl mx-auto px-4">
   <div class="mx-auto lg:w-2/3 p-4">
     <img src="{{ $tentFlags.RelPermalink }}">
   </div>
@@ -10,6 +10,12 @@
     <div class="font-display text-6xl text-brick-red">
       Sponsorships
     </div>
+    {{ range .Site.Data.sponsorships }}
+    <div>
+      {{ .title }} ${{ .price }}
+      {{ .description }}
+    </div>
+    {{ end }}
     <div>
       ** All additional donations outside of the titles above are greatly appreciated and will be announced in the
       event's social media and church bulletin.

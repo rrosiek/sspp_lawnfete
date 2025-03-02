@@ -12,3 +12,15 @@
   --color-light-teal: oklch(88.66% 0.098 190.67);
   --color-teal: oklch(79.63% 0.143 194.56);
 }
+
+h2 {
+  @apply text-brick-red text-2xl mt-2;
+}
+
+p {
+  @apply mt-1 mb-4;
+}
+
+a {
+  @apply underline font-semibold;
+}

@@ -1,0 +1,14 @@
+car_show:
+  - image: "images/sponsors/west_herr.png"
+    link: "https://www.westherr.com/"
+silver:
+  - image: "images/sponsors/queen_city_endodontics.png"
+    link: "https://www.queencityendo716.com/"
+  - image: "images/sponsors/waterford.jpg"
+    link: "https://waterfordadv.com/"
+bronze:
+  - image: "images/sponsors/rise.jpeg"
+    link: "https://www.risebuffalo.com/"
+open_act:
+  - image: "images/sponsors/chet_gary.png"
+    link: "https://www.facebook.com/chetgarymusic/"
