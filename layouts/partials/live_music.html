@@ -1,5 +1,11 @@
-{{ $logo := resources.Get "images/hit-n-run_logo.jpg" }}
-{{ $logo := $logo.Process "resize 450x webp" }}
+{{ $nbn := resources.Get "images/nineties_by_nature_photo.png" }}
+{{ $nbn := $nbn.Process "resize 450x webp "}}
+{{ $chetgary := resources.Get "images/sponsors/chet_gary.png" }}
+{{ $chetgary := $chetgary.Process "resize 250x webp" }}
+{{ $nerds := resources.Get "images/nerds_gone_wild_photo.png" }}
+{{ $nerds := $nerds.Process "resize 450x webp" }}
+{{ $hitnrun := resources.Get "images/hit-n-run_logo.jpg" }}
+{{ $hitnrun := $hitnrun.Process "resize 450x webp" }}
 
 <div class="py-12 bg-white">
   <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
@@ -8,11 +14,28 @@
     </div>
 
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
-      Friday Night, 7-10pm
+      Thursday Night, July 24th 7-10pm
+    </div>
+    <div>
+      <img src="{{ $nbn.RelPermalink }}" />
+    </div>
+
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Friday Night, July 25th 5-10pm
+    </div>
+    <div class="flex flex-col items-center text-xl text-center font-semibold">
+      <div class="my-4">Opening from 5-7pm: Chet Gary</div>
+      <img src="{{ $chetgary.RelPermalink }}" />
+      <div class="my-4">7-10pm: Nerds Gone Wild</div>
+      <img src="{{ $nerds.RelPermalink }}" />
+    </div>
+
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Saturday Night, July 26th 7-10pm
     </div>
     <div>
       <a href="https://www.hitnrun.net/">
-        <img src="{{ $logo.RelPermalink }}" />
+        <img src="{{ $hitnrun.RelPermalink }}" />
       </a>
     </div>
     <div class="my-4 text-center">

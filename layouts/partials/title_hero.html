@@ -1,7 +1,9 @@
+{{ $logoBg := resources.Get "logo_background.svg" }}
 {{ $tentFlags := resources.Get "tent_flags.svg" }}
 
-<div class="w-full bg-gradient-to-b from-sky-50 via-blue-50 to-sky-100 to-90%">
-  <div class="mx-auto lg:w-2/3 p-4">
+<!-- <div class="w-full bg-gradient-to-b from-emerald-50 via-blue-50 to-emerald-100 to-90%"> -->
+<div class="w-full bg-[url({{ $logoBg.RelPermalink }})] bg-center bg-no-repeat bg-cover">
+  <div class=" mx-auto lg:w-2/3 p-4">
     <img src="{{ $tentFlags.RelPermalink }}">
   </div>
   <div class="container mx-auto text-center space-y-6 lg:space-y-10">
