@@ -24,12 +24,8 @@
     ],
     "classes": [
       "antialiased",
-      "bg-[opacity-50]",
-      "bg-[opacity-75]",
       "bg-[url(/hills_bg.svg)]",
       "bg-[url(/logo_background.svg)]",
-      "bg-[url(/logo_background.svg)]/50",
-      "bg-[url(/logo_background.svg)]/70",
       "bg-center",
       "bg-coral/90",
       "bg-cover",
@@ -58,6 +54,7 @@
       "items-center",
       "lg:mt-10",
       "lg:space-y-10",
+      "lg:w-1/2",
       "lg:w-2/3",
       "max-w-5xl",
       "max-w-6xl",
@@ -91,6 +88,8 @@
       "text-lg",
       "text-xl",
       "underline",
+      "w-1/2",
+      "w-2/3",
       "w-full"
     ],
     "ids": [

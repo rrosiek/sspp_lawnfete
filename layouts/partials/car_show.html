@@ -1,0 +1,17 @@
+{{ $car := resources.Get "images/car_show_vehicle.svg" }}
+
+<div class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+    <div class="w-full font-display text-4xl text-center text-brick-red py-6 border-y-3 border-double">
+      1st Annual Car Show
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <div class="my-4 text-xl font-semibold">Thursday, July 24th, 5-9pm</div>
+      <img class="w-2/3 lg:w-1/2" src="{{ $car.RelPermalink }}" />
+      <div class="my-4 text-lg">
+        $20 a car, each registration gets a free beverage ticket! 50/50 basket raffle prizes for best car and truck.
+        Click <a class="underline text-brick-red" href="https://flowto.it/eiyc1TtAb1">here</a> to register!
+      </div>
+    </div>
+  </div>
+</div>
