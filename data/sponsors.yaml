@@ -1,6 +1,9 @@
 car_show:
   - image: "images/sponsors/west_herr.png"
     link: "https://www.westherr.com/"
+kid_zone:
+  - image: "images/sponsors/bloom.png"
+    link: "https://www.bloomcreativearts.com"
 silver:
   - image: "images/sponsors/queen_city_endodontics.png"
     link: "https://www.queencityendo716.com/"
@@ -9,6 +12,8 @@ silver:
 bronze:
   - image: "images/sponsors/rise.jpeg"
     link: "https://www.risebuffalo.com/"
+  - image: "images/sponsors/tri_delta_resources.png"
+    link: "https://tri-delta.com/"
 open_act:
   - image: "images/sponsors/chet_gary.png"
     link: "https://www.facebook.com/chetgarymusic/"
