@@ -21,11 +21,23 @@
     </a>
     {{ end }}
 
-    <!-- Car Show -->
+    <!-- Kid Zone -->
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Kid Zome
     </div>
     {{ range .Site.Data.sponsors.kid_zone }}
+    {{ $logo := resources.Get .image }}
+    {{ $logo := $logo.Process "resize 300x webp" }}
+    <a href="{{ .link }}">
+      <img src="{{ $logo.RelPermalink }}" />
+    </a>
+    {{ end }}
+
+    <!-- Beverage -->
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Beverage Sponsor
+    </div>
+    {{ range .Site.Data.sponsors.beverage }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
     <a href="{{ .link }}">
@@ -67,6 +79,16 @@
     <a class="my-4" href="{{ .link }}">
       <img src="{{ $logo.RelPermalink }}" />
     </a>
+    {{ end }}
+
+    <!-- Donors -->
+    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Thank You Donors!
+    </div>
+    {{ range .Site.Data.sponsors.donors }}
+    <div class="my-4 font-semibold">
+      {{ .name }}
+    </div>
     {{ end }}
   </div>
 </div>

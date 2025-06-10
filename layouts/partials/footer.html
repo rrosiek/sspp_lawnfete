@@ -1,5 +1,9 @@
 {{ $logo := resources.Get "images/sspp_logo.png" }}
 {{ $logo := $logo.Process "resize 300x webp" }}
+{{ $fb_logo := resources.Get "images/facebook-144.png" }}
+{{ $fb_logo := $fb_logo.Process "resize 50x webp" }}
+{{ $insta_logo := resources.Get "images/instagram-188.png" }}
+{{ $insta_logo := $insta_logo.Process "resize 50x webp" }}
 
 <div class="mt-6 lg:mt-10 p-8 bg-pale-yellow/75 border-t-8 border-pale-yellow">
   <div class="mx-auto max-w-5xl flex flex-col items-center">
@@ -7,6 +11,14 @@
     <div class="my-6 font-semibold text-center">
       68 East Main St.,<br />
       Hamburg, NY, 14057
+    </div>
+    <div class="flex space-x-4">
+      <a href="https://www.facebook.com/profile.php?id=61557382814999">
+        <img src="{{ $fb_logo.RelPermalink }}" />
+      </a>
+      <a href="https://www.instagram.com/ssppschoollawnfete/">
+        <img src="{{ $insta_logo.RelPermalink }}" />
+      </a>
     </div>
   </div>
 </div>

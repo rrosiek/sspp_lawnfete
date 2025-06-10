@@ -1,4 +1,8 @@
 {{ $hillsBg := resources.Get "hills_bg.svg" }}
+{{ $fb_logo := resources.Get "images/facebook-144.png" }}
+{{ $fb_logo := $fb_logo.Process "resize 80x webp" }}
+{{ $insta_logo := resources.Get "images/instagram-188.png" }}
+{{ $insta_logo := $insta_logo.Process "resize 80x webp" }}
 
 <div class="py-12 w-full bg-[url({{ $hillsBg.RelPermalink }})] bg-top bg-no-repeat">
   <div class="max-w-6xl mx-auto px-4">
@@ -10,6 +14,14 @@
         <p class="text-lg">{{ .description }}</p>
       </div>
       {{ end }}
+    </div>
+    <div class="mt-4 flex justify-center space-x-4">
+      <a href="https://www.facebook.com/profile.php?id=61557382814999">
+        <img src="{{ $fb_logo.RelPermalink }}" />
+      </a>
+      <a href="https://www.instagram.com/ssppschoollawnfete/">
+        <img src="{{ $insta_logo.RelPermalink }}" />
+      </a>
     </div>
   </div>
 </div>

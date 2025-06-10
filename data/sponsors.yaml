@@ -1,6 +1,9 @@
 car_show:
   - image: "images/sponsors/west_herr.png"
     link: "https://www.westherr.com/"
+beverage:
+  - image: "images/sponsors/labatt.png"
+    link: "https://www.labattusa.com"
 kid_zone:
   - image: "images/sponsors/bloom.png"
     link: "https://www.bloomcreativearts.com"
@@ -9,11 +12,29 @@ silver:
     link: "https://www.queencityendo716.com/"
   - image: "images/sponsors/waterford.jpg"
     link: "https://waterfordadv.com/"
+  - image: "images/sponsors/brunners.png"
+    link: "https://https://www.brunnerseatery.com/"
 bronze:
   - image: "images/sponsors/rise.jpeg"
     link: "https://www.risebuffalo.com/"
   - image: "images/sponsors/tri_delta_resources.png"
     link: "https://tri-delta.com/"
+  - image: "images/sponsors/st_francis_hs.png"
+    link: "https://www.stfrancishigh.org/"
+  - image: "images/sponsors/lovelace_family.png"
+    link: "/"
+  - image: "images/sponsors/carl_czora.png"
+    link: "/"
 open_act:
   - image: "images/sponsors/chet_gary.png"
     link: "https://www.facebook.com/chetgarymusic/"
+donors:
+  - name: "Carl Lograsso - Carl's Custom Creations"
+  - name: "Kula Yoga Hamburg"
+  - name: "Melissa Conroy"
+  - name: "Mindy Marranca"
+  - name: "Mike's Mobile Detailing, LLC"
+  - name: "Queen of Heaven Carnival - Equipment"
+  - name: "Sean O'Brien"
+  - name: "Wendy Kwitek"
+  - name: "Winfield's Pub"
