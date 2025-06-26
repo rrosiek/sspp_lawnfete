@@ -14,6 +14,8 @@ silver:
     link: "https://waterfordadv.com/"
   - image: "images/sponsors/brunners.png"
     link: "https://https://www.brunnerseatery.com/"
+  - image: "images/sponsors/ccmr_contracting.jpeg"
+    link: "https://ccmrcontractingllc.com/"
 bronze:
   - image: "images/sponsors/rise.jpeg"
     link: "https://www.risebuffalo.com/"
@@ -38,3 +40,4 @@ donors:
   - name: "Sean O'Brien"
   - name: "Wendy Kwitek"
   - name: "Winfield's Pub"
+  - name: "Embury Family Dental"
