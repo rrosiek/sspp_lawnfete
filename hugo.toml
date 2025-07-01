@@ -14,7 +14,7 @@ disableKinds = ["section", "taxonomy", "term"]
     target = 'css'
 [module]
   [module.hugoVersion]
-    min = "0.128.0"
+    min = "0.147.8"
   [[module.mounts]]
     source = 'assets'
     target = 'assets'
