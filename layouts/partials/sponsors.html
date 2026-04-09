@@ -21,32 +21,20 @@
     </a>
     {{ end }}
 
-    <!-- Kid Zone -->
-    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
-      Kid Zome
+    <!-- Gold -->
+    <div class="mb-4 mt-10 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+      Gold
     </div>
-    {{ range hugo.Data.sponsors.kid_zone }}
+    {{ range hugo.Data.sponsors.gold }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
-    <a href="{{ .link }}">
-      <img src="{{ $logo.RelPermalink }}" />
-    </a>
-    {{ end }}
-
-    <!-- Beverage -->
-    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
-      Beverage Sponsor
-    </div>
-    {{ range hugo.Data.sponsors.beverage }}
-    {{ $logo := resources.Get .image }}
-    {{ $logo := $logo.Process "resize 300x webp" }}
-    <a href="{{ .link }}">
+    <a class="my-4" href="{{ .link }}">
       <img src="{{ $logo.RelPermalink }}" />
     </a>
     {{ end }}
 
     <!-- Silver -->
-    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+    <div class="mb-4 mt-10 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Silver
     </div>
     {{ range hugo.Data.sponsors.silver }}
@@ -58,7 +46,7 @@
     {{ end }}
 
     <!-- Bronze -->
-    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+    <div class="mb-4 mt-10 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Bronze
     </div>
     {{ range hugo.Data.sponsors.bronze }}
@@ -70,7 +58,7 @@
     {{ end }}
 
     <!-- Opening Act -->
-    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+    <div class="mb-4 mt-10 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Opening Act Sponsor
     </div>
     {{ range hugo.Data.sponsors.open_act }}
@@ -82,7 +70,7 @@
     {{ end }}
 
     <!-- Donors -->
-    <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
+    <div class="mb-4 mt-10 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Thank You Donors!
     </div>
     {{ range hugo.Data.sponsors.donors }}
