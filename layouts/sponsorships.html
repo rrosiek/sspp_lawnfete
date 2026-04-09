@@ -10,7 +10,7 @@
     <div class="font-display text-6xl text-brick-red">
       Sponsorships
     </div>
-    {{ range .Site.Data.sponsorships }}
+    {{ range hugo.Data.sponsorships }}
     <div>
       {{ .title }} ${{ .price }}
       {{ .description }}

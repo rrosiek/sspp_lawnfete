@@ -13,7 +13,7 @@
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Car Show
     </div>
-    {{ range .Site.Data.sponsors.car_show }}
+    {{ range hugo.Data.sponsors.car_show }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
     <a href="{{ .link }}">
@@ -25,7 +25,7 @@
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Kid Zome
     </div>
-    {{ range .Site.Data.sponsors.kid_zone }}
+    {{ range hugo.Data.sponsors.kid_zone }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
     <a href="{{ .link }}">
@@ -37,7 +37,7 @@
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Beverage Sponsor
     </div>
-    {{ range .Site.Data.sponsors.beverage }}
+    {{ range hugo.Data.sponsors.beverage }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
     <a href="{{ .link }}">
@@ -49,7 +49,7 @@
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Silver
     </div>
-    {{ range .Site.Data.sponsors.silver }}
+    {{ range hugo.Data.sponsors.silver }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
     <a class="my-4" href="{{ .link }}">
@@ -61,7 +61,7 @@
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Bronze
     </div>
-    {{ range .Site.Data.sponsors.bronze }}
+    {{ range hugo.Data.sponsors.bronze }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
     <a class="my-4" href="{{ .link }}">
@@ -73,7 +73,7 @@
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Opening Act Sponsor
     </div>
-    {{ range .Site.Data.sponsors.open_act }}
+    {{ range hugo.Data.sponsors.open_act }}
     {{ $logo := resources.Get .image }}
     {{ $logo := $logo.Process "resize 300x webp" }}
     <a class="my-4" href="{{ .link }}">
@@ -85,7 +85,7 @@
     <div class="mb-4 mt-8 p-2 font-display text-2xl text-center text-brick-red border-b-2">
       Thank You Donors!
     </div>
-    {{ range .Site.Data.sponsors.donors }}
+    {{ range hugo.Data.sponsors.donors }}
     <div class="my-4 font-semibold">
       {{ .name }}
     </div>
